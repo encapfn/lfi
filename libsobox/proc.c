@@ -285,3 +285,15 @@ sbx_dlinvoke(void* handle, void* symbol, uint64_t a0, uint64_t a1)
     *lfi_regs_arg(regs, 1) = a1;
     return lfi_proc_invoke(proc->proc, symbol, proc->fns->ret);
 }
+
+LFIRegs*
+sbx_lfi_proc_regs(void* handle) {
+    return lfi_proc_regs(((SoboxProc*) handle)->proc);
+}
+
+uint64_t
+sbx_invoke(void* handle, void* symbol)
+{
+    SoboxProc* proc = handle;
+    return lfi_proc_invoke(proc->proc, symbol, proc->fns->ret);
+}
