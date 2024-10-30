@@ -1,0 +1,4 @@
+wrapper_name = "LibSoboxTest"
+
+[functions.add]
+fntab_id = 0

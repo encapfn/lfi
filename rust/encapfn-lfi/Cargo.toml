@@ -1,0 +1,14 @@
+[package]
+name = "encapfn-lfi"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+bindgen.workspace = true
+
+[dependencies]
+log = "0.4.21"
+encapfn.workspace = true
+
+[dependencies.libsobox-sys]
+path = "../libsobox-sys"

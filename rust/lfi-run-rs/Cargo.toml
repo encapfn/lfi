@@ -1,0 +1,8 @@
+[package]
+name = "lfi-run-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+liblfi-sys = { path = "../liblfi-sys" }
+page_size = "0.6.0"

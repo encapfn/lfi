@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "lib.h"
 
 int
 add(int a, int b)

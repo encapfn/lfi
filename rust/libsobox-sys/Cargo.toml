@@ -3,7 +3,7 @@ name = "libsobox-sys"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
-
 [build-dependencies]
-bindgen = "0.70.1"
+# We can technically use any non-EF bindgen version here, but importing the
+# global workspace one is more convenient.
+bindgen.workspace = true
